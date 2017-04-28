@@ -89,19 +89,7 @@ namespace MultiLayerPerceptron
 
             public Layer getNextLayer() { return this.nextLayer; }
             public void setNextLayer(Layer l) { this.nextLayer = l; } 
-
-            // add 1 in front of the out vector
-            /*public double[] addBias(double[] inp)
-            {
-                double[] outp = new double[inp.Length + 1];
-                outp[0] = 1.0f;
-                for (int i = 0; i < inp.Length; ++i)
-                {
-                    outp[i + 1] = inp[i];
-                }
-                return outp;
-            }*/
-
+                
             /*public void addBias()
             {
                 Neuron n = new Neuron(0, this, MLPType.bias);
