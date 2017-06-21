@@ -8,13 +8,13 @@ namespace MultiLayerPerceptron
 {
     class Neuron 
     {            
-        MLPType nrnType;
+        MLPType nrnType; //MLType is defined in class MLP
         public void setNrnType(MLPType n) { nrnType = n; }
         public MLPType getNrnType() { return this.nrnType; }
 
         double rightVal = 0; 
         double leftVal = 0; 
-        double actDeriv = 0;
+        double actDeriv = 0; //Activation Derivative
         double error = 0;
         double delta = 0;
 
