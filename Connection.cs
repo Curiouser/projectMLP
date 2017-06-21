@@ -40,15 +40,9 @@ namespace MultiLayerPerceptron
 
         public double Gradient
         {
-            get
-            {
-                return gradient;
-            }
+            get { return gradient; }
 
-            set
-            {
-                gradient = value;
-            }
+            set { gradient = value; }
         }
 
         public Connection(Neuron prev, Neuron next, double w)
