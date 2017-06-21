@@ -1,0 +1,3 @@
+number of layers
+size of the layer *for nbLayers lines*
+next Neuron layer index in MLP *space* next Neuron index in the Layer *space* Previous Neuron Layer Index in MLP *space* Previous Neuron Index in Layer *for an unknown nbConnections lines *
