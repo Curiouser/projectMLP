@@ -442,7 +442,7 @@ namespace MultiLayerPerceptron
                 if (c.isNextNrn(next) && c.isPrevNrn(prev))
                     return c.DeltaWeight;
             }
-            throw new MLPException("method MLP.getWeight - this connection doesn't exist");
+            throw new MLPException("method MLP.getDeltaWeight - this connection doesn't exist");
         }
                 
         public void setDeltaWeight(Neuron prev, Neuron next, double delta)
@@ -452,7 +452,7 @@ namespace MultiLayerPerceptron
                 if (c.isNextNrn(next) && c.isPrevNrn(prev))
                     c.DeltaWeight = delta;
             }
-            throw new MLPException("method MLP.getWeight - this connection doesn't exist");
+            throw new MLPException("method MLP.setDeltaWeight - this connection doesn't exist");
         }
 
         public double getGradient(Neuron prev, Neuron next)
@@ -462,7 +462,7 @@ namespace MultiLayerPerceptron
                 if (c.isNextNrn(next) && c.isPrevNrn(prev))
                     return c.Gradient;
             }
-            throw new MLPException("method MLP.getWeight - this connection doesn't exist");
+            throw new MLPException("method MLP.getGradient - this connection doesn't exist");
         }
 
         public void setGradient(Neuron prev, Neuron next, double gradient) //TO DO there should be only one connection in Connections for a given (prev, next) => we should check this when adding them in loadMLP
@@ -472,7 +472,7 @@ namespace MultiLayerPerceptron
                 if (c.isNextNrn(next) && c.isPrevNrn(prev))
                     c.DeltaWeight = gradient;
             }
-            throw new MLPException("method MLP.getWeight - this connection doesn't exist");
+            throw new MLPException("method MLP.setGradient - this connection doesn't exist");
         }
                
         public void addLayer(Layer l) { this.Layers.Add(l); } // we only add a layer on the right, otherwise too difficult to adjust connections again
