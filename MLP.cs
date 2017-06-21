@@ -603,7 +603,7 @@ namespace MultiLayerPerceptron
             sw.Flush();
         }
 
-        private void backProp(double learningRate,  StreamWriter swErrors) 
+        private void backProp(double learningRate,  StreamWriter swErrors) //backpropagation
         {
             resetWeightsDelta();
             for (int trainingSet = 0; trainingSet < TrainingSets.Count; trainingSet++) 
